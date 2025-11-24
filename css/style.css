@@ -62,7 +62,8 @@ body {
   top: 0;
   display: flex;
   padding: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background: rgba(44, 62, 80, 0.98);
   backdrop-filter: blur(10px);
