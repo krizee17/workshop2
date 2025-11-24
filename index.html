@@ -7,75 +7,100 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Kritika Adhikari</h1>
-      <p>IT & Cybersecurity Enthusiast</p>
-      <p>Suryabinayak, Balkot, Bhaktapur | akritika392@gmail.com</p>
+    <!-- Hero Section with Video Background -->
+    <header id="hero">
+      <video autoplay loop muted id="video-background">
+        <!-- Replace with your own video file -->
+        <source
+          src="videos/Disney-Pixar _PIPER_ - Cute Motivational short movie..mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <nav class="navbar">
+        <span class="logo">Kritika Adhikari</span>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="menu-button"
+        >
+          ☰
+        </button>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Kritika Adhikari</h1>
+        <p>IT & Cybersecurity Enthusiast</p>
+        <p class="hero-location">Suryabinayak, Balkot, Bhaktapur</p>
+      </div>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
 
     <main>
       <section id="about">
-        <img
-          src="images/Kritika Adhikari.jpg"
-          alt="Kritika Adhikari"
-          class="profile-img"
-        />
-        <div class="about-content">
-          <h2>About Me</h2>
-          <p>
-            Motivated and detail-oriented individual with a strong passion for
-            IT and networking. Currently pursuing BSc (Hons) Cybersecurity at
-            Herald College, Kathmandu. Experienced in volunteering at major
-            events at St. Xavier's College, demonstrating excellent
-            problem-solving, time management, and communication skills. Highly
-            adaptable with strong critical-thinking abilities and a proactive
-            approach to assisting in various tasks.
-          </p>
+        <h2>About Me</h2>
+        <div class="about-container">
+          <img
+            src="images/Kritika Adhikari.jpg"
+            alt="Kritika Adhikari"
+            class="profile-img"
+          />
+          <div class="about-content">
+            <p>
+              Motivated and detail-oriented individual with a strong passion for
+              IT and networking. Currently pursuing BSc (Hons) Cybersecurity at
+              Herald College, Kathmandu. Experienced in volunteering at major
+              events at St. Xavier's College, demonstrating excellent
+              problem-solving, time management, and communication skills. Highly
+              adaptable with strong critical-thinking abilities and a proactive
+              approach to assisting in various tasks.
+            </p>
 
-          <h3>Professional Experience</h3>
-          <p><strong>Volunteer at St. Xavier's College, Kathmandu</strong></p>
-          <ul>
-            <li>Assisted with special events and programs</li>
-            <li>
-              Maintained clean, neat and operational facilities to serve program
-              needs
-            </li>
-            <li>
-              Used strong interpersonal communication skills to convey
-              information to others
-            </li>
-            <li>
-              Supported engaging, fun and smooth-running events by helping with
-              organization and planning
-            </li>
-          </ul>
+            <h3>Professional Experience</h3>
+            <p><strong>Volunteer at St. Xavier's College, Kathmandu</strong></p>
+            <ul>
+              <li>Assisted with special events and programs</li>
+              <li>
+                Maintained clean, neat and operational facilities to serve
+                program needs
+              </li>
+              <li>
+                Used strong interpersonal communication skills to convey
+                information to others
+              </li>
+              <li>
+                Supported engaging, fun and smooth-running events by helping
+                with organization and planning
+              </li>
+            </ul>
 
-          <h3>Community Involvement</h3>
-          <p>
-            <strong>Ethical HCK Community - Herald College Kathmandu</strong>
-          </p>
-          <p>
-            Organized 8 different cybersecurity events, developing strong
-            teamwork skills:
-          </p>
-          <ul>
-            <li>Bad USB Workshop</li>
-            <li>CyberHunt Competition</li>
-            <li>Dark Web Awareness Session</li>
-            <li>Introduction to Bug Bounty</li>
-            <li>Wifi Hijack Demonstration</li>
-            <li>Digital Detectives Event</li>
-          </ul>
+            <h3>Community Involvement</h3>
+            <p>
+              <strong>Ethical HCK Community - Herald College Kathmandu</strong>
+            </p>
+            <p>
+              Organized 8 different cybersecurity events, developing strong
+              teamwork skills:
+            </p>
+            <ul>
+              <li>Bad USB Workshop</li>
+              <li>CyberHunt Competition</li>
+              <li>Dark Web Awareness Session</li>
+              <li>Introduction to Bug Bounty</li>
+              <li>Wifi Hijack Demonstration</li>
+              <li>Digital Detectives Event</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -103,7 +128,7 @@
 
       <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-grid">
+        <div class="skills-container">
           <div class="skill-item">Problem Solving</div>
           <div class="skill-item">Event Co-ordination</div>
           <div class="skill-item">Critical Thinking</div>
@@ -121,7 +146,7 @@
 
       <section id="projects">
         <h2>Projects</h2>
-        <div class="projects-grid">
+        <div id="projects-grid">
           <article class="project-card">
             <img
               src="images/Weatherapp.png"
@@ -170,7 +195,7 @@
 
       <section id="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form id="contact-form">
           <div class="form-group">
             <label for="name">Name</label>
             <input
@@ -200,6 +225,7 @@
               placeholder="Your message here..."
             ></textarea>
           </div>
+          <div id="form-message"></div>
           <button type="submit">Send Message</button>
         </form>
       </section>
@@ -207,10 +233,9 @@
 
     <footer>
       <p>&copy; 2025 Kritika Adhikari. All rights reserved.</p>
-      <p>
-        Eager to contribute to IT & NOC Department through internship
-        opportunities
-      </p>
+      <p>Eager to contribute to cybersecurity.</p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
